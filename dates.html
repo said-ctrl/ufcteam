@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <title>Ufcteam</title>
+
+</head>
+
+<body>
+  
+  <header class="bg-[url('imag/photo1.jpg')]">
+    <nav>
+      <a href="index.html">Acceuil</a>
+      <a href="combatan.html">Les combattants</a>
+      <a href="dates.html">Les dates</a>
+      <a href="conty.html">Contact</a>
+    </nav>
+
+</header>
+
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+  
+  
+    <div id='calendar'></div>
+
+
+
+</body>
+</html>
