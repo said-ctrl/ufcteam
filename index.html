@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Ufcteam</title>
-
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    
 </head>
 
 <body>
-    <header class="bg-[url('imag.jp/photo1.jpg')] bg-cover h-60 bg-no-repeat ">
+    <header class="bg-[url('imag.jp/photo6.jpg')] flex justify-between bg-center  bg-cover pt-16">
 
-        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-6">Ultimate Fighting Club Teams</h1>
-        <nav class=" text-[#ef233c] uppercase flex justify-end gap-3 mr-7 text-xl ">
+        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 py-16">Ultimate Fighting Club Teams</h1>
+        <nav class=" text-[#ef233c] uppercase flex justify-end gap-3 mr-7 text-xl items-center ">
             <a href="index.html">Accueil</a>
             <a href="combatan.html">Les combattants</a>
             <a href="dates.html">Les dates</a>
@@ -21,7 +23,7 @@
         </nav>
 
     </header>
-<main class="bg-gradient-to-b from-lime-400 to-indigo-600 py-8">
+<main class="bg-gradient-to-b from-lime-400 to-indigo-600 py-8 ">
     <section class="flex mx-auto container text-center gap-20 ">
 
 
@@ -45,14 +47,29 @@
             </p>
         </div>
     
-
-        <img src="imag.jp/photo3.jpg" alt="octogone">
+        <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                          <img src="imag.jp/photo3.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="imag.jp/image5.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="imag.jp/photo5.jpg" alt="">
+                      </li>
+                  </ul>
+            </div>
+          </section>
+       
+        
         
     </section>
 
 </main>
 
-    <footer class="absolute bottom-0 w-full text-white bg-gradient-to-t from-green-600 to-indigo-600">
+    <footer class=" py-3 absolute bottom-0 w-full text-white bg-gradient-to-t from-green-600 to-indigo-600">
 
         <div class="container mx-auto flex flex-wrap justify-between">
 
@@ -115,7 +132,9 @@
         </div>
     </footer>
 
-
+    <script>
+        new Splide( '#image-carousel' ).mount();
+      </script>
 
 
 </body>
