@@ -9,25 +9,39 @@
 
 </head>
 
-<body class="bg-gradient-to-t from-indigo-600 to-green-600">
+<body>
 
 
-    <header class="bg-[url('imag.jp/photo1.jpg')] bg-cover h-60 bg-no-repeat">
-        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-4">Ultimate Fighting Club Teams</h1>
-        <nav class=" text-[#ef233c] uppercase flex justify-end gap-3 mr-7 text-xl ">
-            <nav class=" text-[#ef233c] flex justify-end gap-3 mr-7 text-xl ">
-                <a href="index.html">Accueil</a>
-                <a href="combatan.html">Les combattants</a>
-                <a href="dates.html">Les dates</a>
-                <a href="conty.html">Contact</a>
-            </nav>
+    <header class="bg-[url('imag.jp/photo1.jpg')] bg-cover h-60 bg-no-repeat opacity-70   ">
+        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-4 font-bold ">Ultimate Fighting Club Teams</h1>
+        <nav class=" text-[#ef233c] flex justify-end mr-4 text-xl font-bold  ">
+            <ul class="flex flex-col lg:flex-row gap-4">
+                <li
+                    class="text-xl font-bold md:mb-4 mb-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded full...">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li
+                    class="text-xl font-bold md:mb-4 mb-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded full...">
+                    <a href="combatan.html">Les combattants </a></li>
+                <li
+                    class="text-xl font-bold md:mb-4 mb-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded full...">
+                    <a href="dates.html">Les dates </a></li>
+                <li
+                    class="text-xl font-bold md:mb-4 mb-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded full...">
+                    <a href="conty.html">Contact</a> </li>
+            </ul>
+        </nav>
 
     </header>
-    <div class="flex text-center items-center ">
-        
+    <div class="flex flex-col lg:flex-row text-center items-center bg-gradient-to-t from-indigo-600 to-green-600">
         <div class="w-full md:w-96 md:max-w-full mx-auto">
-            <p class="text-2xl">Pour toutes information contactez-nous</p>
-            <div class="p-6 border border-gray-300 sm:rounded-md">
+            <img class="mx-4 my-4" src="imag.jp/photo4.jpg" alt="">
+        </div>
+        <div class="flex flex-col md:w-96 md:max-w-full mx-auto">
+            <dlv class="flex">
+                <p class="text-2xl mb-4 text-white font-bold ">Pour toutes information contactez-nous</p>
+            </dlv>
+            <div class="p-5  sm:rounded-md">
                 <form method="POST" action="">
                     <label class="block mb-6">
                         <span class="text-gray-700">Votre Nom</span>
@@ -42,7 +56,7 @@
                       focus:ring
                       focus:ring-indigo-200
                       focus:ring-opacity-50
-                    " placeholder="Saïd Said" />
+                    " placeholder="entrervotrenom" />
                     </label>
                     <label class="block mb-6">
                         <span class="text-gray-700">Adresse Email</span>
@@ -57,7 +71,7 @@
                       focus:ring
                       focus:ring-indigo-200
                       focus:ring-opacity-50
-                        " placeholder="saidi.saïd@example.com" required />
+                        " placeholder="entrervotre.mail@example.com" required />
                     </label>
                     <label class="block mb-6">
                         <span class="text-gray-700">Message</span>
@@ -72,12 +86,12 @@
                       focus:ring
                       focus:ring-indigo-200
                       focus:ring-opacity-50
-                    " rows="3" placeholder="entrer votre commentaire..."></textarea>
+                    " rows="2" placeholder="entrer votre commentaire..."></textarea>
                     </label>
                     <div class="mb-6">
-                        <button type="submit" class="
+                        <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 
                       h-10
-                      px-5
+                      px-6
                       text-indigo-100
                       bg-indigo-700
                       rounded-lg
@@ -90,25 +104,26 @@
                         </button>
                     </div>
                     <div>
-                       
+
                     </div>
                 </form>
             </div>
         </div>
-<div>
-        <img class="mx-2 my-2" src="imag.jp/photo2.jpg" alt="combat"></div>
+        <div class="w-full md:w-96 md:max-w-full mx-auto">
+            <img class="mx-2 " src="imag.jp/photo2.jpg" alt="combat">
+        </div>
         <form action="get"></form>
 
 
 
     </div>
 
-    <footer class="absolute bottom-0 w-full text-white bg-gradient-to-t from-indigo-600 to-green-600">
+    <footer class="w-full text-white bg-gradient-to-t from-green-600 to-indigo-600">
 
         <div class="container mx-auto flex flex-wrap justify-between">
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">À propos</h2>
+                <h2>À propos</h2>
                 <ul>
                     <li><a href="#" class="block hover:text-gray-300">Qui sommes-nous?</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Notre équipe</a></li>
@@ -118,7 +133,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Services</h2>
+                <h2>Services</h2>
                 <ul>
                     <li><a href="combatan.html" class="block hover:text-gray-300">Les combattants</a></li>
                     <li><a href="dates.html" class="block hover:text-gray-300">Calendriers</a></li>
@@ -128,7 +143,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Contact</h2>
+                <h2>Contact</h2>
                 <ul>
                     <li><a href="conty.html" class="block hover:text-gray-300">Contactez-nous</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Support</a></li>
@@ -138,7 +153,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Réseaux sociaux</h2>
+                <h2>Réseaux sociaux</h2>
                 <ul>
                     <li class="flex align-items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-facebook mt-1" viewBox="0 0 16 16">
