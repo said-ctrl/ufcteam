@@ -29,38 +29,50 @@ async function affiche() {
                 id: 'BirthDate',
                 name: 'Naissance',
                 formatter: (cell) => ` ${cell.replace('T00:00:00', '')}`
-            },
-            {
-                id: 'CareerStats',
+            }
+            , {
 
+                name: 'Stats',
 
-
-                name: 'Actions',
                 formatter: (cell, row) => {
+                    let tableau = [];
+                    let index
+                    for (let i = 0; i < fox.length; i++) {
+                        if (row.cells[0].data === fox[i].FighterId) {
+                            
+                            index = i
+                        }
+                    }
+
                     return gridjs.h('button', {
                         className: 'py-2 mb-4 px-4 border rounded-md text-white bg-blue-600 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ',
-                        onClick: () => for ( let f=0; f<data.length; f++)
-                        
-                        }
-                            console.log(row.cells[0].data)
-                        return alert(`Editing "${row.cells[1].data}" "${row.cells[2].data}"`)
-                        
-                        }
-                    }, 'Infos');
+                        onClick: () => alert(`
+                                 Pourcentage de decision: ${fox[index].CareerStats.DecisionPercentage}
+                                Précision de frappe ${fox[index].CareerStats.SigStrikeAccuracy}
+                                Frappes par minute ${fox[index].CareerStats.SigStrikesLandedPerMinute}
+                                Moyenne de mise au sol   ${fox[index].CareerStats.TakedownAverage}`)
+
+
+                    }, 'info')
+
+
+
                 }
             },
         ],
+
         search: true,
         data: fox,
         sort: true,
         pagination: {
             limit: 7
         },
-    })
 
 
-        .render(document.getElementById("pdon"));
+
+    }).render(document.getElementById("pdon"))
 }
-affiche()
 
+
+affiche()
 
