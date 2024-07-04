@@ -8,15 +8,16 @@
     <title>Ufcteam</title>
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 
-    <nav class="bg-[url('imag.jp/photo9.jpg')] bg-cover bg-center h-60 bg-no-repeat   ">
+    <nav class="bg-[url('imagjp/photo9.jpg')] bg-cover bg-center h-60 bg-no-repeat max-md:h-[35vh]   ">
 
-
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -29,47 +30,49 @@
                 </svg>
             </button>
         </div>
-
-
+    </div>
+        <div class="flex justify-between">
+        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-8 font-bold ">Ultimate Fighting Club Teams</h1>
         <div class="items-center justify-between mt-4 hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-8 font-bold ">Ultimate Fighting Club Teams
-            </h1>
-            <ul class="flex flex-col  p-4 mr-4  md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"">
+            
+            
+            <ul class="flex flex-col  p-4 mr-4  md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
                 <li>
                     <a href=" index.html"
-                class="text-xl font-bold  block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 aria-current">
+                class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 md:dark:text-[#ccff33] aria-current">
                 Accueil</a>
                 </li>
                 <li>
                     <a href="combatan.html"
-                        class="text-xl font-bold  block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Les
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 md:dark:text-[#ccff33] aria-current">Les
                         combattants </a>
                 </li>
                 <li>
                     <a href="dates.html"
-                        class="text-xl font-bold block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Les
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 md:dark:text-[#ccff33] aria-current">Les
                         dates </a>
                 </li>
                 <li>
 
                     <a href="conty.html"
-                        class="text-xl font-bold block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Contact</a>
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 md:dark:text-[#ccff33] aria-current">Contact</a>
                 </li>
             </ul>
         </div>
+    </div>
     </nav>
 
     </header>
-    <div class="flex flex-col lg:flex-row text-center items-center bg-gradient-to-t from-indigo-600 to-green-600">
+    <div class="h-[60vh] flex flex-col lg:flex-row text-center items-center bg-gradient-to-t from-indigo-600 to-green-600">
         <div class="w-full md:w-96 md:max-w-full mx-auto">
-            <img class="mx-4 my-4" src="imag.jp/photo4.jpg" alt="">
+            <img class="mx-4 my-4  lightSpeedIn  " src="imagjp/foto2 (1).jpg" alt="">
         </div>
         <div class="flex flex-col md:w-96 md:max-w-full mx-auto">
             <dlv class="flex">
-                <p class="text-2xl mb-4 text-white font-bold ">Pour toutes information contactez-nous</p>
+                <p class="text-2xl mb-4 text-white font-bold fadeInDownBig  ">Pour toutes information contactez-nous</p>
             </dlv>
             <div class="p-5  sm:rounded-md">
-                <form method="POST" action="">
+                <form method="POST" action=""  class="animated flip" >
                     <label class="block mb-6">
                         <span class="text-gray-700">Votre Nom</span>
                         <input type="text" name="name" class="
@@ -136,8 +139,8 @@
                 </form>
             </div>
         </div>
-        <div class="w-full md:w-96 md:max-w-full mx-auto">
-            <img class="mx-2 " src="imag.jp/photo2.jpg" alt="combat">
+        <div class="w-full lightSpeedIn  md:w-96 md:max-w-full mx-auto">
+            <img class="mx-2    " src="imagjp/photo2.jpg" alt="combat">
         </div>
         <form action="get"></form>
 
@@ -145,12 +148,12 @@
 
     </div>
 
-    <footer class="w-full text-white bg-gradient-to-t from-green-600 to-indigo-600">
+    <footer class="w-full h-full text-white bg-gradient-to-t from-green-600 to-indigo-600">
 
         <div class="container mx-auto flex flex-wrap justify-between">
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2>À propos</h2>
+                <h2  class="underline" >À propos</h2>
                 <ul>
                     <li><a href="#" class="block hover:text-gray-300">Qui sommes-nous?</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Notre équipe</a></li>
@@ -160,7 +163,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2>Services</h2>
+                <h2  class="underline"  >Services</h2>
                 <ul>
                     <li><a href="combatan.html" class="block hover:text-gray-300">Les combattants</a></li>
                     <li><a href="dates.html" class="block hover:text-gray-300">Calendriers</a></li>
@@ -170,7 +173,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2>Contact</h2>
+                <h2 class="underline"  >Contact</h2>
                 <ul>
                     <li><a href="conty.html" class="block hover:text-gray-300">Contactez-nous</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Support</a></li>
@@ -180,7 +183,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2>Réseaux sociaux</h2>
+                <h2 class="underline"    >Réseaux sociaux</h2>
                 <ul>
                     <li class="flex align-items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-facebook mt-1" viewBox="0 0 16 16">
@@ -204,7 +207,7 @@
 
 
         <div class="text-center mt-8">
-            <p>&copy; 2024 Saïd. Tous droits réservés.</p>S
+            <p>&copy; 2024 Saïd. Tous droits réservés.</p>
         </div>
     </footer>
 

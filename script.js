@@ -39,7 +39,7 @@ async function affiche() {
                     let index
                     for (let i = 0; i < fox.length; i++) {
                         if (row.cells[0].data === fox[i].FighterId) {
-                            
+
                             index = i
                         }
                     }
@@ -67,9 +67,16 @@ async function affiche() {
         pagination: {
             limit: 7
         },
+        style: {
+            td: {
+                border: '1px solid'
+                
+                
+            },
 
 
 
+        }
     }).render(document.getElementById("pdon"))
 }
 

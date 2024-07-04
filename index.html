@@ -9,61 +9,67 @@
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
-    <nav class="bg-[url('imag.jp/photo9.jpg')] bg-cover bg-center h-60 bg-no-repeat   ">
+    <nav class="bg-[url('imagjp/photo9.jpg')] bg-cover bg-center h-60 bg-no-repeat max-md:h-[35vh]   ">
 
-
-        <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">menu</span>
+                <span class="sr-only">open menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
+            </div>
         </div>
-
-
+<div class="flex justify-between">
+        <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-8 font-bold ">Ultimate Fighting Club Teams</h1>
         <div class="items-center justify-between mt-4 hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <h1 class="text-[#ccff33] flex justify-start text-2xl ml-7 pt-8 font-bold ">Ultimate Fighting Club Teams
-            </h1>
-            <ul class="flex flex-col  p-4 mr-4  md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"">
+            
+            
+            <ul class="flex flex-col p-4 mr-4  md:p-0 mt-4 font-medium  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
                 <li>
                     <a href=" index.html"
-                class="text-xl font-bold  block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 aria-current">
+                class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 md:dark:text-[#ccff33] aria-current">
                 Accueil</a>
                 </li>
                 <li>
                     <a href="combatan.html"
-                        class="text-xl font-bold  block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Les
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33]  md:p-0 dark:text-white md:dark:text-blue-500">Les
                         combattants </a>
                 </li>
                 <li>
                     <a href="dates.html"
-                        class="text-xl font-bold block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Les
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33]  md:p-0 dark:text-white md:dark:text-blue-500">Les
                         dates </a>
                 </li>
                 <li>
 
                     <a href="conty.html"
-                        class="text-xl font-bold block py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Contact</a>
+                        class="text-xl font-bold block py-1 px-2 rounded md:bg-transparent md: text-[#ccff33] md:p-0 dark:text-white md:dark:text-blue-500">Contact</a>
                 </li>
             </ul>
         </div>
+    </div>
     </nav>
-
-
+<div>
+   
+</div>
     </header>
-    <main class="bg-gradient-to-b from-stone-500 to-red-700 py-12  ">
-        <section class="flex mx-auto container text-center gap-4  ">
+
+
+
+    <main class="h-[50vh]  bg-gradient-to-b from-stone-500 to-red-700 py-12  ">
+        <section class="flex mx-auto container text-center gap-4 flex-col md:flex-row ">
 
 
             <div class="flex flex-col justify-between items-center text-white">
@@ -80,8 +86,8 @@
                     que la
                     boxe anglaise, le grappling, le jiu-jitsu brésilien, le kick-boxing, la lutte et le muay-thaï3.
                 </p>
-                <h2 class="text-xl text-center uppercase underline py-8 ">Les News</h2>
-                <p>L'Ultimate Fighting Championship (UFC) est une organisation de combat libre professionnelle qui est
+                <h2 class="text-xl text-center uppercase underline py-8 zoomInDown ">Les News</h2>
+                <p class=" zoomInDown">L'Ultimate Fighting Championship (UFC) est une organisation de combat libre professionnelle qui est
                     reconnue comme la plus grande ligue de Mixed Martial Arts (MMA) au monde. Avec des événements
                     réguliers qui rassemblent les meilleurs combattants de différentes disciplines, l'UFC offre un
                     spectacle de sport de combat de haut niveau. Récemment, l'UFC 303 a captivé les fans avec une carte
@@ -93,17 +99,17 @@
                 </p>
             </div>
 
-            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <section id="image-carousel" class="splide " aria-label="Beautiful Images">
                 <div class="splide__track ">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="imag.jp/photo3.jpg" alt="">
+                            <img src="imagjp/photo3.jpg" alt="">
                         </li>
                         <li class="splide__slide">
-                            <img src="imag.jp/image5.jpg" alt="">
+                            <img src="imagjp/image5.jpg" alt="">
                         </li>
                         <li class="splide__slide">
-                            <img src="imag.jp/photo5.jpg" alt="">
+                            <img src="imagjp/photo5.jpg" alt="">
                         </li>
                     </ul>
                 </div>
@@ -120,7 +126,7 @@
         <div class="container mx-auto flex flex-wrap justify-between">
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">À propos</h2>
+                <h2 class="text-xl font-bold mb-4   underline ">À propos</h2>
                 <ul>
                     <li><a href="#" class="block hover:text-gray-300">Qui sommes-nous?</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Notre équipe</a></li>
@@ -130,7 +136,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Services</h2>
+                <h2 class="text-xl font-bold mb-4  underline ">Services</h2>
                 <ul>
                     <li><a href="combatan.html" class="block hover:text-gray-300">Les combattants</a></li>
                     <li><a href="dates.html" class="block hover:text-gray-300">Calendriers</a></li>
@@ -140,7 +146,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Contact</h2>
+                <h2 class="text-xl font-bold mb-4  underline ">Contact</h2>
                 <ul>
                     <li><a href="conty.html" class="block hover:text-gray-300">Contactez-nous</a></li>
                     <li><a href="#" class="block hover:text-gray-300">Support</a></li>
@@ -150,7 +156,7 @@
 
 
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4 mb-4">
-                <h2 class="text-xl font-bold mb-4">Réseaux sociaux</h2>
+                <h2 class="text-xl font-bold mb-4  underline ">Réseaux sociaux</h2>
                 <ul>
                     <li class="flex align-items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-facebook mt-1" viewBox="0 0 16 16">
@@ -174,7 +180,7 @@
 
 
         <div class="text-center mt-8">
-            <p>&copy; 2024 Saïd. Tous droits réservés.</p>S
+            <p>&copy; 2024 Saïd. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -182,6 +188,7 @@
         new Splide('#image-carousel').mount();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    
 
 
 </body>
